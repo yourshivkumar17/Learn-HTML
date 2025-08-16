@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <h3>Registration Form</h3>
+    </header>
+
+    <main>
+        <form action="/action.php">
+            <!-- Username -->
+            <input type="text"name="username"placeholder="Username">
+            <br><br>
+
+            <!-- Password -->
+            <input type="password"name="password"placeholder="Password">
+            <br><br>
+            <!--Form are used for singnup, login in-->
+
+            <!-- Class selection -->
+            <h5>Select your Class</h5>
+            <label>
+                <input type="radio" name="class" value="classIX"> Class IX
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="class" value="classX"> Class X
+            </label>
+            <!--label is for click button and choise-->
+            <br><br>
+
+            <!-- Favourite Subjects -->
+            <h5>Select your Favourite Subject</h5>
+            <label>
+                <input type="checkbox" value="Math" name="subject"> Math
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="Physics" name="subject"> Physics
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="Computer Science" name="subject"> Computer Science
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="English" name="subject"> English
+            </label>
+            <br><br>
+
+            <!-- City selection -->
+            <h5>Select City</h5>
+            <select name="city">
+                <option value="Delhi">Delhi</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Agra">Agra</option>
+            </select>
+            <br><br>
+
+            <!-- Feedback -->
+            <textarea name="feedback" placeholder="Please give your feedback" rows="6" cols="40"></textarea>
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>Form created</p>
+    </footer>
+</body>
+</html>
